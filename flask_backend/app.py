@@ -93,6 +93,8 @@ def upload():
                     c = x-e if x-e > 0 else 0
                     d = x+w+e if x+w+e < imag.shape[1] else imag.shape[1]
                     dup = imag[a:b, c:d]
+                    # cv2.imshow('dup', dup)
+                    # cv2.waitKey(0)
                     img = cv2.rectangle(
                         img, (x, y), (x + w, y + h), (0, 255, 0), 2)
                    
